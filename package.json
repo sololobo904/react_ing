@@ -1,0 +1,24 @@
+{
+  "name": "react_ing",
+  "version": "1.0.0",
+  "description": "Test drive on the essentials",
+  "main": "index.html",
+  "scripts": {
+     "start": "npm rum lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite" : "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sololobo904/react_ing.git"
+  },
+  "author": "aashu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sololobo904/react_ing/issues"
+  },
+  "homepage": "https://github.com/sololobo904/react_ing#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
