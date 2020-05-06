@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import Menu from './components/MenuComponent';
-import './App.css';
 import { DISHES } from './shared/dishes';
 
-class App extends Component {
+class Main extends Component {
    constructor(props){
       super(props);
 
       this.state = {
-         dishes : DISHES
+         dishes : DISHES,
+         selectedDish : null
       };
    }
+   onDishSelected(dish){
+      this.setState({selectedDish: dish});
+   }
+
    render(){
       return (
         <div>
@@ -20,7 +24,7 @@ class App extends Component {
                 <NavbarBrand href = "/">Let's do it</NavbarBrand>
              </div>
           </Navbar>
-          <Menu dishes = {this.state.dishes}/>
+          <Menu dishes = {this.state.dishes}  onClick = {() => this.onDishSelected(dish)}/>
         </div>
       );
    }
